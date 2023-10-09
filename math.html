@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>حل المسائل الرياضية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"],
+    select {
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 3px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+    }
+
+    .result-heading {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .result-value {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>حل المسائل الرياضية</h1>
+
+  <form>
+    <label for="num1">العدد الأول:</label>
+    <input type="number" id="num1" required>
+
+    <br>
+
+    <label for="num2">العدد الثاني:</label>
+    <input type="number" id="num2" required>
+
+    <br>
+
+    <label for="operation">العملية:</label>
+    <select id="operation">
+      <option value="add">جمع</option>
+      <option value="subtract">طرح</option>
+      <option value="multiply">ضرب</option>
+      <option value="divide">قسمة</option>
+    </select>
+
+    <br>
+
+    <button type="button" onclick="calculate()">احسب</button>
+  </form>
+
+  <div class="result" id="result">
+    <h2 class="result-heading">النتيجة:</h2>
+    <p class="result-value"></p>
+  </div>
+
+  <script src="math.js"></script>
+</body>
+</html>
